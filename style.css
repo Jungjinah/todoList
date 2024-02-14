@@ -1,3 +1,17 @@
+@font-face {
+    font-family: 'TTHakgyoansimMonggeulmonggeulR';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2402_keris@1.0/TTHakgyoansimMonggeulmonggeulR.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'KOTRAHOPE';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/KOTRAHOPE.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     margin: 0;
     background-image: url("images/background.jpeg");
@@ -5,8 +19,51 @@ body {
     background-size: cover;
 }
 
+h1{
+    font-family: 'TTHakgyoansimMonggeulmonggeulR';
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+.top {
+    display: flex;
+}
+
+#task-input {
+    width: 400px;
+    border-radius: 3px;
+    font-family: 'TTHakgyoansimMonggeulmonggeulR';
+    margin-left: 10px;
+    height: 35px;
+}
+
+#add-button {
+    background-color: #E8D9FF;
+    border-color: #E8D9FF;
+    border: 0px;
+    width: 33px;
+    height: 31px;
+    margin-left: 5px;
+    box-shadow: 0 0 1px 1px #D1B2FF;
+    border-radius: 3px;
+    font-weight: 900;
+    font-size: 19px;
+}
+
+#add-button:hover {
+    background-color: #A566FF;
+    border-color: #A566FF;
+}
+
+.input-area {
+    margin: auto;
+    margin-left: 15px;
+}
+
 .container {
-    background-color: white;
+    background-color: #FFFFF6;
+    opacity : 0.8;
     min-height: 100vh;  /* vh : 내가 보는 화면의 세로길이만큼 */
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
@@ -19,6 +76,9 @@ body {
     display: flex;
     border-bottom: 1px solid lightgray;
     position: relative;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "TTHakgyoansimMonggeulmonggeulR";
 }
 
 .task-tabs div {
@@ -28,15 +88,45 @@ body {
 .task {
     display: flex;
     justify-content: space-between;
-    padding: 1em;
+    padding: 0.5em;
+    font-size: 30px;
+    font-family: 'KOTRAHOPE';
 }
 
 #under-line {
     height: 4px;
     background-color: pink;
     position: absolute;
-    width: 65px;
+    width: 70px;
     left: 0px;
-    top: 52px;
+    top: 66px;
     padding : 0px;
+}
+
+.task-done {
+    text-decoration: line-through;
+}
+
+.btn-area {
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: "TTHakgyoansimMonggeulmonggeulR";
+}
+
+.checkBtn {
+    border-color: #B2CCFF;
+    background-color: #B2CCFF;
+    box-shadow: 0 0 3px #FFA7A7;
+}
+
+.resetBtn {
+    border-color: #D5D5D5;
+    box-shadow: 0 0 3px #8C8C8C;
+    border: 0px;
+}
+
+.delBtn {
+    border-color: #FFA7A7;
+    background-color: #FFA7A7;
+    box-shadow: 0 0 3px #0054FF;
 }

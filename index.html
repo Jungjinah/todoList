@@ -9,23 +9,25 @@
 </head>
 <body>
     <div class="container">
-        <h1>Todo List</h1>
-        <section class="input-area">
-            <input type="text" id="task-input"/>
-            <button id="add-button">+</button>
+        <section class="top">
+            <h1>TODO LIST</h1>
+            <div class="input-area">
+                <input type="text" placeholder="부지런하게 살자!" id="task-input" onkeyup="enterKey(event)"/>
+                <button id="add-button">+</button>
+            </div>
         </section>
         
         <section class="task-area">
             <div class="task-tabs">
                 <div id="under-line"></div>
                 <div>
-                    모두
+                    ALL
                 </div>
                 <div>
-                    진행중
+                    TODO
                 </div>
                 <div>
-                    끝남
+                    DONE
                 </div>
             </div>
             <div id="task-board">
