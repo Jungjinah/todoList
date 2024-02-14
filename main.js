@@ -32,12 +32,17 @@ function addTask() {
     }
     
     if (task.taskContent == "" || task.taskContent == null) {
-        alert("할 일을 적어주세요!");
+        alert("할 일을 적어주세욤!");
         taskInput.focus();
     } else {
-        taskList.push(task);
-        console.log(taskList);
-        render();
+        if(task.taskContent.length > 30) {
+            alert("30자까지 입력 가능해욤")
+        } else {
+            taskList.push(task);
+            console.log(taskList);
+            render();
+        }
+        
     }
 }
 
@@ -84,11 +89,15 @@ function randomIDGenerate() {
 }
 
 function deleteTask(id) {
-    for(let i = 0; i < taskList.length; i++) {
-        if(taskList[i].id == id) {
-            taskList.splice(i, 1);
-            break;
+    const delChk = confirm("정말 삭제할거에욤??");
+    
+    if(delChk == true) {   
+        for(let i = 0; i < taskList.length; i++) {
+            if(taskList[i].id == id) {
+                taskList.splice(i, 1);
+                break;
+            }
         }
+        render();
     }
-    render();
 }

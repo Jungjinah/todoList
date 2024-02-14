@@ -105,6 +105,10 @@ h1{
 
 .task-done {
     text-decoration: line-through;
+    background-color: lightgray;
+    background-size: 500px;
+    border-radius: 5px;
+    width: 80%;
 }
 
 .btn-area {
@@ -129,4 +133,5 @@ h1{
     border-color: #FFA7A7;
     background-color: #FFA7A7;
     box-shadow: 0 0 3px #0054FF;
+    margin-left: 5px;
 }
