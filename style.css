@@ -79,6 +79,7 @@ h1{
     font-size: 20px;
     font-weight: bold;
     font-family: "TTHakgyoansimMonggeulmonggeulR";
+    cursor: pointer;
 }
 
 .task-tabs div {
@@ -94,13 +95,15 @@ h1{
 }
 
 #under-line {
-    height: 4px;
+    position: absolute;
+    height: 6px;
     background-color: pink;
     position: absolute;
-    width: 70px;
-    left: 0px;
-    top: 66px;
+    width: 0;
+    left: 0;
+    top: 0;
     padding : 0px;
+    transition: 0.5s;
 }
 
 .task-done {
